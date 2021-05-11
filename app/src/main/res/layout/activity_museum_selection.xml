@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MuseumSelection">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="36dp"
+        android:text="Museum Selection"
+        android:textColor="#050505"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Museum1"
+        android:layout_width="109dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="20dp"
+        android:onClick="LouvrePageFun"
+        android:text="Louvre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <Button
+        android:id="@+id/Musuem2"
+        android:layout_width="109dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="NatMuseumChinaFun"
+        android:text="National museum of China"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <Button
+        android:id="@+id/Museum3"
+        android:layout_width="109dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="3dp"
+        android:onClick="VaticanFun"
+        android:text="Vatican Museums"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Museum1" />
+
+    <Button
+        android:id="@+id/Museum4"
+        android:layout_width="109dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="43dp"
+        android:onClick="MetArtFun"
+        android:text="Metropolitan Museum of Art"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Musuem2" />
+
+    <Button
+        android:id="@+id/Museum5"
+        android:layout_width="109dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="3dp"
+        android:onClick="BritishFun"
+        android:text="British Museum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Museum3" />
+
+    <Button
+        android:id="@+id/Museum6"
+        android:layout_width="109dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="43dp"
+        android:onClick="TateFun"
+        android:text="Tate Modern"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Museum4" />
+
+    <Button
+        android:id="@+id/Museum7"
+        android:layout_width="109dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="3dp"
+        android:onClick="NatGalleryFun"
+        android:text="National Gallery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Museum5" />
+
+    <Button
+        android:id="@+id/Museum8"
+        android:layout_width="109dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="43dp"
+        android:onClick="NatHistoryFun"
+        android:text="Natural History Museum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Museum6" />
+
+    <Button
+        android:id="@+id/Museum9"
+        android:layout_width="112dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="3dp"
+        android:onClick="AmNatHistoryFun"
+        android:text="American museum of natural history"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Museum7" />
+
+    <Button
+        android:id="@+id/Museum10"
+        android:layout_width="112dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:onClick="StateHermFun"
+        android:text="state hermitage museum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Museum8" />
+</androidx.constraintlayout.widget.ConstraintLayout>

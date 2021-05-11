@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SouvenirShop">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".registration">
+
+        <EditText
+            android:id="@+id/MugQty"
+            android:layout_width="60dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="64dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/CafeBuy6"
+            app:layout_constraintTop_toBottomOf="@+id/BttlQty" />
+
+        <EditText
+            android:id="@+id/CstrQty"
+            android:layout_width="60dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="64dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/CafeBuy7"
+            app:layout_constraintTop_toBottomOf="@+id/MugQty" />
+
+        <EditText
+            android:id="@+id/HatQty"
+            android:layout_width="60dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="64dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/CafeBuy2"
+            app:layout_constraintTop_toBottomOf="@+id/ShirtQty" />
+
+        <EditText
+            android:id="@+id/SglbQty"
+            android:layout_width="59dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="65dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/CafeBuy3"
+            app:layout_constraintTop_toBottomOf="@+id/HatQty" />
+
+        <EditText
+            android:id="@+id/KchnQty"
+            android:layout_width="60dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="64dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/CafeBuy4"
+            app:layout_constraintTop_toBottomOf="@+id/SglbQty" />
+
+        <TextView
+            android:id="@+id/SouvenirItem1"
+            android:layout_width="46dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="20dp"
+            android:text="Shirt"
+            android:textColor="#050505"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Item" />
+
+        <Button
+            android:id="@+id/teaBtn"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="37dp"
+            android:text="Buy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAddToBasket" />
+
+        <TextView
+            android:id="@+id/SouvenirItem2"
+            android:layout_width="53dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="35dp"
+            android:text="Hat"
+            android:textColor="#0B0A0A"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SouvenirItem1" />
+
+        <TextView
+            android:id="@+id/CafePrice1"
+            android:layout_width="24dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="24dp"
+            android:text="10"
+            android:textColor="#040404"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/SouvenirItem1"
+            app:layout_constraintTop_toBottomOf="@+id/Price" />
+
+        <TextView
+            android:id="@+id/Item"
+            android:layout_width="45dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="60dp"
+            android:text="Items"
+            android:textColor="#0B0A0A"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Price"
+            android:layout_width="62dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:text="Prices (£)"
+            android:textColor="#050505"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/Item"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitle5" />
+
+        <TextView
+            android:id="@+id/txtAddToBasket"
+            android:layout_width="96dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="60dp"
+            android:text="Add to Basket"
+            android:textColor="#050505"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/txtQuantity"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/BttlQty"
+            android:layout_width="60dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="64dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/CafeBuy5"
+            app:layout_constraintTop_toBottomOf="@+id/KchnQty" />
+
+        <TextView
+            android:id="@+id/txtQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="12dp"
+            android:text="Quantity"
+            android:textColor="#070707"
+            app:layout_constraintStart_toEndOf="@+id/Price"
+            app:layout_constraintTop_toBottomOf="@+id/txtTitle5" />
+
+        <TextView
+            android:id="@+id/CafePrice2"
+            android:layout_width="10dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="40dp"
+            android:text="5"
+            android:textColor="#0B0A0A"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/SouvenirItem2"
+            app:layout_constraintTop_toBottomOf="@+id/CafePrice1" />
+
+        <Button
+            android:id="@+id/CafeBuy2"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="37dp"
+            android:text="Buy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/teaBtn" />
+
+        <TextView
+            android:id="@+id/SouvenirItem3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="35dp"
+            android:text="Snow Globe"
+            android:textColor="#070707"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SouvenirItem2" />
+
+        <TextView
+            android:id="@+id/CafePrice3"
+            android:layout_width="12dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="35dp"
+            android:text="5"
+            android:textColor="#040303"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/SouvenirItem3"
+            app:layout_constraintTop_toBottomOf="@+id/CafePrice2" />
+
+        <Button
+            android:id="@+id/CafeBuy3"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="37dp"
+            android:text="Buy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CafeBuy2" />
+
+        <TextView
+            android:id="@+id/SouvenirItem5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="35dp"
+            android:text="Key chain"
+            android:textColor="#0C0C0C"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SouvenirItem3" />
+
+        <TextView
+            android:id="@+id/CafePrice4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="35dp"
+            android:text="5"
+            android:textColor="#0B0A0A"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/SouvenirItem5"
+            app:layout_constraintTop_toBottomOf="@+id/CafePrice3" />
+
+        <Button
+            android:id="@+id/CafeBuy4"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="37dp"
+            android:text="Buy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CafeBuy3" />
+
+        <TextView
+            android:id="@+id/CafeItem5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="35dp"
+            android:text="Bottle"
+            android:textColor="#0B0A0A"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/SouvenirItem5" />
+
+        <TextView
+            android:id="@+id/CafePrice5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="35dp"
+            android:text="5"
+            android:textColor="#070707"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/CafeItem5"
+            app:layout_constraintTop_toBottomOf="@+id/CafePrice4" />
+
+        <Button
+            android:id="@+id/CafeBuy5"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="37dp"
+            android:text="Buy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CafeBuy4" />
+
+        <TextView
+            android:id="@+id/CafeItem6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="35dp"
+            android:text="Mug"
+            android:textAllCaps="false"
+            android:textColor="#090909"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CafeItem5" />
+
+        <TextView
+            android:id="@+id/CafePrice6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="35dp"
+            android:text="5"
+            android:textColor="#090909"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/CafeItem6"
+            app:layout_constraintTop_toBottomOf="@+id/CafePrice5" />
+
+        <Button
+            android:id="@+id/CafeBuy6"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="37dp"
+            android:text="Buy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CafeBuy5" />
+
+        <TextView
+            android:id="@+id/CafeItem7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="35dp"
+            android:text="Coaster"
+            android:textColor="#040303"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CafeItem6" />
+
+        <TextView
+            android:id="@+id/CafePrice7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="35dp"
+            android:text="2"
+            android:textAllCaps="false"
+            android:textColor="#050505"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/CafeItem7"
+            app:layout_constraintTop_toBottomOf="@+id/CafePrice6" />
+
+        <Button
+            android:id="@+id/CafeBuy7"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginEnd="37dp"
+            android:text="Buy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CafeBuy6" />
+
+        <Button
+            android:id="@+id/BtnBack2"
+            android:layout_width="101dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="28dp"
+            android:onClick="MuseumSelectFun"
+            android:text="Return"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CafePrice7" />
+
+        <TextView
+            android:id="@+id/txtTitle5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="16dp"
+            android:text="Souvenir Selection"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/BtnContinue2"
+            android:layout_width="112dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="36dp"
+            android:onClick="CafeFun"
+            android:text="Continue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CafeBuy7" />
+
+        <EditText
+            android:id="@+id/ShirtQty"
+            android:layout_width="60dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="64dp"
+            android:ems="10"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/teaBtn"
+            app:layout_constraintTop_toBottomOf="@+id/txtQuantity" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
