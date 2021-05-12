@@ -16,11 +16,40 @@ public class CafeSelection extends AppCompatActivity {
         setContentView(R.layout.activity_cafe_selection);
         EditText teaQty = findViewById(R.id.teaQty);
         Button addTeaBtn = findViewById(R.id.teaBtn);
+        EditText waterQty = findViewById(R.id.WaterQty);
+        Button addWater = findViewById(R.id.WaterBtn);
+        EditText coffeeQty = findViewById(R.id.CoffeeQty);
+        Button addCoffee = findViewById(R.id.CoffeeBtn);
 
-        item tea = new item("tea", 1);
+        item tea = new item("Tea", 1);
+        item water = new item("Water", 1);
+        item coffee = new item("Coffee", 2);
+
+
         SouvenirShop.itmorder.basket.add(tea);
+        SouvenirShop.itmorder.basket.add(water);
+        SouvenirShop.itmorder.basket.add(coffee);
 
+        addTeaBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SouvenirShop.itmorder.basket.get(3).quantity = Integer.parseInt(String.valueOf(teaQty.getText()));
+            }
+        });
 
+        addWater.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SouvenirShop.itmorder.basket.get(4).quantity = Integer.parseInt(String.valueOf(waterQty.getText()));
+            }
+        });
+
+        addCoffee.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SouvenirShop.itmorder.basket.get(5).quantity = Integer.parseInt((String.valueOf(coffeeQty.getText())));
+            }
+        });
     }
 
     public void SouvenirFun(View view){

@@ -43,18 +43,18 @@
             android:layout_marginEnd="64dp"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/CafeBuy2"
+            app:layout_constraintEnd_toStartOf="@+id/HatBtn"
             app:layout_constraintTop_toBottomOf="@+id/ShirtQty" />
 
         <EditText
-            android:id="@+id/SglbQty"
+            android:id="@+id/SnowGlobeQty"
             android:layout_width="59dp"
             android:layout_height="40dp"
             android:layout_marginTop="19dp"
             android:layout_marginEnd="65dp"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/CafeBuy3"
+            app:layout_constraintEnd_toStartOf="@+id/SnowGlobeBtn"
             app:layout_constraintTop_toBottomOf="@+id/HatQty" />
 
         <EditText
@@ -66,7 +66,7 @@
             android:ems="10"
             android:inputType="number"
             app:layout_constraintEnd_toStartOf="@+id/CafeBuy4"
-            app:layout_constraintTop_toBottomOf="@+id/SglbQty" />
+            app:layout_constraintTop_toBottomOf="@+id/SnowGlobeQty" />
 
         <TextView
             android:id="@+id/SouvenirItem1"
@@ -81,7 +81,7 @@
             app:layout_constraintTop_toBottomOf="@+id/Item" />
 
         <Button
-            android:id="@+id/teaBtn"
+            android:id="@+id/ShirtBtn"
             android:layout_width="65dp"
             android:layout_height="35dp"
             android:layout_marginTop="15dp"
@@ -185,14 +185,14 @@
             app:layout_constraintTop_toBottomOf="@+id/CafePrice1" />
 
         <Button
-            android:id="@+id/CafeBuy2"
+            android:id="@+id/HatBtn"
             android:layout_width="65dp"
             android:layout_height="35dp"
             android:layout_marginTop="25dp"
             android:layout_marginEnd="37dp"
             android:text="Buy"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/teaBtn" />
+            app:layout_constraintTop_toBottomOf="@+id/ShirtBtn" />
 
         <TextView
             android:id="@+id/SouvenirItem3"
@@ -219,14 +219,14 @@
             app:layout_constraintTop_toBottomOf="@+id/CafePrice2" />
 
         <Button
-            android:id="@+id/CafeBuy3"
+            android:id="@+id/SnowGlobeBtn"
             android:layout_width="65dp"
             android:layout_height="35dp"
             android:layout_marginTop="23dp"
             android:layout_marginEnd="37dp"
             android:text="Buy"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/CafeBuy2" />
+            app:layout_constraintTop_toBottomOf="@+id/HatBtn" />
 
         <TextView
             android:id="@+id/SouvenirItem5"
@@ -260,7 +260,7 @@
             android:layout_marginEnd="37dp"
             android:text="Buy"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/CafeBuy3" />
+            app:layout_constraintTop_toBottomOf="@+id/SnowGlobeBtn" />
 
         <TextView
             android:id="@+id/CafeItem5"
@@ -408,7 +408,7 @@
             android:layout_marginEnd="64dp"
             android:ems="10"
             android:inputType="number"
-            app:layout_constraintEnd_toStartOf="@+id/teaBtn"
+            app:layout_constraintEnd_toStartOf="@+id/ShirtBtn"
             app:layout_constraintTop_toBottomOf="@+id/txtQuantity" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

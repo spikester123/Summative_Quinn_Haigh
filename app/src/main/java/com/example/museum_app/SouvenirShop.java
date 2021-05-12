@@ -19,14 +19,22 @@ public class SouvenirShop extends AppCompatActivity {
         setContentView(R.layout.activity_souvenir_shop);
 
         EditText ShirtQty = findViewById(R.id.ShirtQty);
-        Button addShirtBtn = findViewById(R.id.teaBtn);
+        Button addShirtBtn = findViewById(R.id.ShirtBtn);
+        EditText HatQty = findViewById(R.id.HatQty);
+        Button addHatBtn = findViewById(R.id.HatBtn);
+        EditText SnowGlobeQty = findViewById(R.id.SnowGlobeQty);
+        Button addSnowGlobe = findViewById(R.id.SnowGlobeBtn);
+
 
         item shirt = new item("Shirt", 10);
+        item hat = new item("Hat", 5);
+        item snowglobe = new item("Snow Globe", 5);
 
         itmorder = new order();
 
         itmorder.basket.add(shirt);
-
+        itmorder.basket.add(hat);
+        itmorder.basket.add(snowglobe);
       addShirtBtn.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View v) {
@@ -34,6 +42,20 @@ public class SouvenirShop extends AppCompatActivity {
           }
       });
 
+
+      addHatBtn.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View v) {
+              itmorder.basket.get(1).quantity = Integer.parseInt(String.valueOf(HatQty));
+          }
+      });
+
+        addSnowGlobe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                itmorder.basket.get(2).quantity = Integer.parseInt((String.valueOf(SnowGlobeQty)));
+            }
+        });
     }
 
 

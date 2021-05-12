@@ -34,8 +34,8 @@
         android:id="@+id/imgLouvre"
         android:layout_width="184dp"
         android:layout_height="191dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="38dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtLouvreTitle"
         app:srcCompat="@drawable/thelouvre" />
@@ -44,8 +44,8 @@
         android:id="@+id/txtLouvre"
         android:layout_width="170dp"
         android:layout_height="190dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="67dp"
         android:text="The Louvre is the worlds largest art museum and a historic monument in Paris, France. It is best know for being the home of the Mona Lisa"
         android:textColor="#070707"
         android:textSize="18sp"
@@ -68,7 +68,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="38dp"
         android:text="Time"
         android:textColor="#090909"
         android:textSize="14sp"
@@ -79,7 +79,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="38dp"
         android:layout_marginEnd="201dp"
         android:text="Date"
         android:textColor="#070707"
@@ -153,5 +153,16 @@
             android:onClick="checkButton"
             android:text="3-5 pm" />
     </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="1dp"
+        android:text="Price £10"
+        android:textColor="#090909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgLouvre" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
